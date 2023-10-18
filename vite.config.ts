@@ -1,9 +1,25 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 
 const index = process.argv.indexOf('--mode');
 
-let mode = index && process.argv[index] || 'production';
+const mode = index && process.argv[index] || 'production';
+const env = loadEnv(mode, __dirname);
 
-export default defineConfig(({command, mode, ssrBuild}) => {
-  return {};
+const entryFileNames = (chunkInfo: { name: string; }) => {
+  return 'assets/scripts/[name].js';
+};
+
+export default defineConfig({
+  base: `${env.VITE_BASE_URL}`,
+  build: {
+    emptyOutDir: true,
+    rollupOptions: {
+      input: [
+        'index.html',
+      ],
+      output: {
+        entryFileNames
+      }
+    }
+  },
 });
