@@ -6,7 +6,11 @@ Clone this repository and start your work.
 
 ```npm start```
 
-You should see your development url in your terminal
+You should see your development url in your terminal.
+
+Your site should look like:
+
+![site!](/public/assets/images/site.png "site")
 
 ## Build production
 
