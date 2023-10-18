@@ -6,6 +6,8 @@ Clone this repository and start your work.
 
 ```npm start```
 
+You should see your development url in your terminal
+
 ## Build production
 
 ```npm run build```
