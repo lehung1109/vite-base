@@ -25,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^20.8.6",
     "concurrently": "^8.2.1",
+    "sass": "^1.69.4",
     "vite": "^4.4.11"
   }
 }
