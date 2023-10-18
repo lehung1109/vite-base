@@ -4,7 +4,7 @@
   "description": "A simple repository for vite base.",
   "main": "index.html",
   "scripts": {
-    "start": "concurrently \"vite build --watch\" \"vite preview\"",
+    "start": "concurrently \"vite build --mode development --watch\" \"vite preview --mode development\"",
     "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
