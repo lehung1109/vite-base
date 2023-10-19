@@ -13,6 +13,7 @@ export default defineConfig({
   base: `${env.VITE_BASE_URL}`,
   build: {
     emptyOutDir: true,
+    sourcemap: true,
     rollupOptions: {
       input: [
         'index.html',
