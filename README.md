@@ -5,7 +5,7 @@ Clone this repository and start your work.
 ## Development
 
 ```npm start```
-
+ 
 You should see your development url in your terminal.
 
 Your site should look like:
